@@ -1,4 +1,4 @@
-const functions = require('firebase-functions');
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -86,4 +86,4 @@ app.listen(3000);
 
 
 
-exports.app = functions.https.onRequest(app);
+module.exports = app;
