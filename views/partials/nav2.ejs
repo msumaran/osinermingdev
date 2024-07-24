@@ -1,0 +1,78 @@
+<nav
+  class="fixed top-0 right-0 z-50 w-full shadow-lg bg-zinc-100 dark:bg-zinc-100"
+>
+  <div class="px-3 py-3 lg:px-5 lg:pl-3">
+    <div class="relative flex items-center justify-between">
+      <div class="flex items-center justify-start rtl:justify-end">
+        <img src="/images/logo2.svg" class="w-full ml-0 md:ml-4" alt="CRM Nativos" />
+        <button
+          id="menuSidebar"
+          data-drawer-target="menu-sidebar"
+          data-drawer-toggle="menu-sidebar"
+          aria-controls="menu-sidebar"
+          aria-expanded="false"
+          type="button"
+          class="z-50 flex ml-8 btn-sidebar md:hidden"
+        >
+          <span class="sr-only">Open sidebar</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="20"
+            height="20"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex items-center">
+        <div class="flex flex-row space-x-2">
+          <div class="flex text-blue ">
+            <a href="/notificaciones2" class="text-blue">
+              <img src="/images/icons/bells.svg" class="mr-0 md:mr-8" alt="Notificaciones" />
+             </a>
+          </div>
+          </div>
+          <div class="flex text-blue">
+            <svg
+                width="19"
+                height="20"
+                viewBox="0 0 19 20"
+                class="hidden md:block"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6673 6.04167C12.6673 7.79057 11.2496 9.20833 9.50065 9.20833C7.75175 9.20833 6.33398 7.79057 6.33398 6.04167C6.33398 4.29276 7.75175 2.875 9.50065 2.875C11.2496 2.875 12.6673 4.29276 12.6673 6.04167Z"
+                  stroke="#0039AA"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.50065 11.5833C6.44007 11.5833 3.95898 14.0644 3.95898 17.125H15.0423C15.0423 14.0644 12.5612 11.5833 9.50065 11.5833Z"
+                  stroke="#0039AA"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <span class="mr-4 font-semibold ms-3 text-blue">Manuel Otarola</span>
+          </div>
+
+          <div class="flex text-blue ">
+            <a href="/login" class="text-blue">
+              <img src="/images/icons/exit.svg" class="ml-0 md:ml-2" alt="Salir" />
+             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

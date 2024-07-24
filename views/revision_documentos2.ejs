@@ -1,0 +1,365 @@
+<%- include('partials/header') %>
+
+<div class="flex flex-col text-blue">
+  <%- include('partials/menu') %> <%- include('partials/nav') %>
+  <main class="relative mt-20 ml-0 md:mt-16 md:ml-36 lg:ml-72">
+    <div class="min-h-screen p-4 mt-4">
+      <div class="caja">
+        <div class="flex flex-col mb-4">
+          <form class="w-full p-8 mx-auto">
+            <!-- Información básica del documento -->
+            <div class="grid grid-cols-1 gap-4 mb-6 md:grid-cols-3">
+              <div class="col-span-full md:col-span-1">
+                <label class="label">Título del documento</label>
+                <input
+                  type="text"
+                  class="input readOnly"
+                  value="Resultados de la gestión de Osinergmin para la supervisión del servicio de gas natural"
+                  readonly
+                />
+              </div>
+              <div>
+                <label class="label">Periodicidad</label>
+                <input
+                  type="text"
+                  class="input readOnly"
+                  value="Trimestral"
+                  readonly
+                />
+              </div>
+              <div>
+                <label class="label">Ámbito</label>
+                <input
+                  type="text"
+                  class="input readOnly"
+                  value="Gestión institucional"
+                  readonly
+                />
+              </div>
+              <div>
+                <label class="label">Proveedor de datos</label>
+                <input
+                  type="text"
+                  class="input readOnly"
+                  value="GPMI"
+                  readonly
+                />
+              </div>
+              <div>
+                <label class="label">Tipo de documento</label>
+                <input
+                  type="text"
+                  class="input readOnly"
+                  value="Reporte"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <!-- Información del documento -->
+            <h2 class="mb-4 text-lg font-semibold">
+              Información del documento
+            </h2>
+            <div class="grid grid-cols-1 gap-4 mb-6 md:grid-cols-4">
+              <div>
+                <label class="label">Año</label>
+                <select class="custom-select">
+                  <option>2024</option>
+                </select>
+              </div>
+              <div>
+                <label class="label">Trimestre</label>
+                <select class="custom-select">
+                  <option>Seleccione el trimestre</option>
+                </select>
+              </div>
+              <div>
+                <label class="label">Texto predeterminado</label>
+                <select class="custom-select">
+                  <option>Seleccione el texto predeterminado</option>
+                </select>
+              </div>
+              <div>
+                <label class="label">Información histórica</label>
+                <div class="flex items-center">
+                  <input type="radio" id="si" name="historico" class="mr-2" />
+                  <label for="si" class="mr-4">Sí</label>
+                  <input type="radio" id="no" name="historico" class="mr-2" />
+                  <label for="no">No</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resumen de la información -->
+            <div class="mb-6">
+              <label class="label">Resumen de la información</label>
+              <textarea class="h-40 input" readonly>
+Lorem ipsum dolor sit amet consectetur. Montes ultricies at congue non convallis. Non gravida proin lacus purus vulputate natoque congue. Faucibus leo mi at eros non. Cras non donec vitae in nunc. Est eu facilisis sapien lorem at viverra magna. Pellentesque montes vulputate sagittis egestas dictumst viverra. Potenti viverra commodo vitae sit neque porta egestas odio proin. Id odio etiam convallis adipiscing et morbi volutpat faucibus. Cursus mauris quam velit imperdiet viverra vestibulum sed.
+
+                  Tincidunt ipsum posuere habitasse sociis nascetur. In aliquam est egestas facilisis ut auctor phasellus id metus. Rutrum lectus consequat orci massa. Nibh sed etiam mi ipsum gravida dignissim. Urna malesuada sed at viverra turpis massa viverra risus. A nec massa pellentesque sed. Duis non risus et nisl nec odio vulputate arcu.
+                  
+                  Cursus scelerisque in habitant elit lacus consectetur consequat nam. Sit amet nullam morbi massa. Cum eget vel sit cursus sit ut id erat.
+                  
+                  Convallis sit aenean dui nulla. Viverra urna nibh neque gravida tellus. Eu arcu nec at egestas. Cursus velit turpis ultricies vitae commodo lectus nascetur. Iaculis fermentum mi elementum quam dolor. Risus odio diam quam lorem egestas.</textarea
+              >
+            </div>
+
+            <!-- Información adicional -->
+            <h2 class="mb-4 text-lg font-semibold">Información adicional</h2>
+            <div class="mb-6">
+              <div
+                class="flex flex-col mb-4 space-x-0 space-y-4 md:space-x-2 md:space-y-0 md:flex-row"
+              >
+                <button type="button" class="buttonmd2">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99935 2.66699V13.3337M13.3327 8.00033L2.66602 8.00032"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Agregar campo de texto
+                </button>
+                <button type="button" class="buttonmd2">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99935 2.66699V13.3337M13.3327 8.00033L2.66602 8.00032"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Agregar hipervinculo
+                </button>
+              </div>
+              <div
+                class="flex items-center justify-between max-w-2xl mb-2 space-x-4"
+              >
+                <input
+                  type="text"
+                  class="mb-2 input"
+                  placeholder="Ingresar texto..."
+                />
+                <img src="/images/icons/trash_red.svg" alt="" />
+              </div>
+              <div
+                class="flex items-center justify-between max-w-2xl mb-2 space-x-4"
+              >
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Ingresar observación..."
+                />
+                <img src="/images/icons/trash_red.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- Subir imagen -->
+            <h2 class="mb-4 text-lg font-semibold">Subir imagen</h2>
+            <div class="max-w-3xl mb-6 cajaInt2">
+              <div
+                class="p-6 text-center border-2 border-[#1849d6] border-dashed rounded-lg"
+              >
+                <img
+                  src="/images/icons/upload.svg"
+                  alt=""
+                  class="w-12 h-12 mx-auto text-gray-400"
+                />
+                <p class="mt-1 text-sm text-gray-600">
+                  Busca una imagen en nuestro librero
+                </p>
+                <img
+                  src="/images/icons/Divider.svg"
+                  alt=""
+                  class="mx-auto my-2"
+                />
+                <button type="button" class="buttonmd2">
+                  Sube un archivo nuevo
+                </button>
+              </div>
+              <p class="mt-2 text-sm text-gray-500">
+                Tamaño máximo: 256x244 px - Peso máximo: 1MB - Formatos
+                compatibles: jpg, png
+              </p>
+              <hr class="my-4" />
+              <div
+                class="relative rounded-lg shadow-sm border border-[#e7e7e7]"
+              >
+                <div class="relative flex items-center p-3 space-x-2">
+                  <img
+                    src="/images/image.png"
+                    alt="Thumbnail"
+                    class="object-cover w-12 h-12 rounded"
+                  />
+                  <div class="flex flex-col">
+                    <span class="text-sm font-semibold text-gray-600"
+                      >filename.jpg</span
+                    >
+                    <span class="text-sm text-gray-600">500KB</span>
+
+                    <button
+                      type="button"
+                      class="absolute text-gray-400 right-3 hover:text-gray-500"
+                    >
+                      <svg
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.3"
+                          d="M12 4.9707C7.59 4.9707 4 8.5607 4 12.9707C4 17.3807 7.59 20.9707 12 20.9707C16.41 20.9707 20 17.3807 20 12.9707C20 8.5607 16.41 4.9707 12 4.9707ZM16 15.5607L14.59 16.9707L12 14.3807L9.41 16.9707L8 15.5607L10.59 12.9707L8 10.3807L9.41 8.9707L12 11.5607L14.59 8.9707L16 10.3807L13.41 12.9707L16 15.5607Z"
+                          fill="#858585"
+                        />
+                        <path
+                          d="M14.59 8.9707L12 11.5607L9.41 8.9707L8 10.3807L10.59 12.9707L8 15.5607L9.41 16.9707L12 14.3807L14.59 16.9707L16 15.5607L13.41 12.9707L16 10.3807L14.59 8.9707ZM12 2.9707C6.47 2.9707 2 7.4407 2 12.9707C2 18.5007 6.47 22.9707 12 22.9707C17.53 22.9707 22 18.5007 22 12.9707C22 7.4407 17.53 2.9707 12 2.9707ZM12 20.9707C7.59 20.9707 4 17.3807 4 12.9707C4 8.5607 7.59 4.9707 12 4.9707C16.41 4.9707 20 8.5607 20 12.9707C20 17.3807 16.41 20.9707 12 20.9707Z"
+                          fill="#858585"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Subir archivo -->
+            <div class="grid grid-cols-1 gap-4 mb-6 md:grid-cols-2">
+              <div class="cajaInt2">
+                <h2 class="mb-4 text-lg font-semibold">Subir archivo</h2>
+                <button type="button" class="mb-2 buttonOrange">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.99984 7.99967C9.99984 9.10424 9.10441 9.99967 7.99984 9.99967C6.89527 9.99967 5.99984 9.10424 5.99984 7.99967C5.99984 6.89511 6.89527 5.99967 7.99984 5.99967C9.10441 5.99967 9.99984 6.89511 9.99984 7.99967Z"
+                      stroke="#F08010"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1.63867 7.99965C2.48819 5.29493 5.01504 3.33301 8.00013 3.33301C10.9852 3.33301 13.5121 5.29495 14.3616 7.9997C13.5121 10.7044 10.9852 12.6663 8.00014 12.6663C5.01504 12.6663 2.48817 10.7044 1.63867 7.99965Z"
+                      stroke="#F08010"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Ver documento guardado
+                </button>
+                <button type="button" class="buttonxs">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_8042_1180)">
+                      <path
+                        d="M4.66667 11.637C3.19391 11.637 2 10.4431 2 8.97038C2 7.69901 2.88971 6.63545 4.08047 6.36835C4.02779 6.13301 4 5.88827 4 5.63704C4 3.7961 5.49238 2.30371 7.33333 2.30371C8.9462 2.30371 10.2915 3.44921 10.6001 4.97103C10.6223 4.9706 10.6444 4.97038 10.6667 4.97038C12.5076 4.97038 14 6.46276 14 8.30371C14 9.91635 12.8548 11.2615 11.3333 11.5704M10 9.63704L8 7.63704M8 7.63704L6 9.63704M8 7.63704L8 15.637"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8042_1180">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(0 0.970703)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Sube un documento nuevo
+                </button>
+                <p class="mt-2 text-sm text-gray-500">
+                  Formatos compatibles: pdf
+                </p>
+                <hr class="my-4" />
+                <div class="mt-4 cajaInt3">
+                  <div class="flex items-center justify-between mb-1">
+                    <div class="flex flex-col items-start">
+                      <span class="text-sm font-medium text-gray-700"
+                        >Subiendo archivo...</span
+                      >
+                      <span class="text-sm font-medium text-gray-700">65%</span>
+                    </div>
+                    <div class="flex flex-col items-end">
+                      <svg width="52" height="25" viewBox="0 0 52 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M12 4.94141C7.59 4.94141 4 8.53141 4 12.9414C4 17.3514 7.59 20.9414 12 20.9414C16.41 20.9414 20 17.3514 20 12.9414C20 8.53141 16.41 4.94141 12 4.94141ZM11 16.9414H9V8.94141H11V16.9414ZM15 16.9414H13V8.94141H15V16.9414Z" fill="#4E4E4E"/>
+                        <path d="M15 8.94141H13V16.9414H15V8.94141Z" fill="#4E4E4E"/>
+                        <path d="M11 8.94141H9V16.9414H11V8.94141Z" fill="#4E4E4E"/>
+                        <path d="M12 2.94141C6.48 2.94141 2 7.42141 2 12.9414C2 18.4614 6.48 22.9414 12 22.9414C17.52 22.9414 22 18.4614 22 12.9414C22 7.42141 17.52 2.94141 12 2.94141ZM12 20.9414C7.59 20.9414 4 17.3514 4 12.9414C4 8.53141 7.59 4.94141 12 4.94141C16.41 4.94141 20 8.53141 20 12.9414C20 17.3514 16.41 20.9414 12 20.9414Z" fill="#4E4E4E"/>
+                        <path opacity="0.3" d="M40 4.94141C35.59 4.94141 32 8.53141 32 12.9414C32 17.3514 35.59 20.9414 40 20.9414C44.41 20.9414 48 17.3514 48 12.9414C48 8.53141 44.41 4.94141 40 4.94141ZM44 15.5314L42.59 16.9414L40 14.3514L37.41 16.9414L36 15.5314L38.59 12.9414L36 10.3514L37.41 8.94141L40 11.5314L42.59 8.94141L44 10.3514L41.41 12.9414L44 15.5314Z" fill="#FF3636"/>
+                        <path d="M42.59 8.94141L40 11.5314L37.41 8.94141L36 10.3514L38.59 12.9414L36 15.5314L37.41 16.9414L40 14.3514L42.59 16.9414L44 15.5314L41.41 12.9414L44 10.3514L42.59 8.94141ZM40 2.94141C34.47 2.94141 30 7.41141 30 12.9414C30 18.4714 34.47 22.9414 40 22.9414C45.53 22.9414 50 18.4714 50 12.9414C50 7.41141 45.53 2.94141 40 2.94141ZM40 20.9414C35.59 20.9414 32 17.3514 32 12.9414C32 8.53141 35.59 4.94141 40 4.94141C44.41 4.94141 48 8.53141 48 12.9414C48 17.3514 44.41 20.9414 40 20.9414Z" fill="#FF3636"/>
+                        </svg>
+                        
+                    </div>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div
+                      class="bg-blue-600 h-2.5 rounded-full"
+                      style="width: 65%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 class="mb-4 text-lg font-semibold">Insertar URL</h2>
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Ingresar el hipervínculo"
+                />
+              </div>
+            </div>
+
+            <!-- Observaciones -->
+            <h2 class="mb-4 text-lg font-semibold">Observaciones</h2>
+            <button type="button" id="openModalBtn" class="mb-6 buttonxs">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12.6671V6.71398C2 6.26817 2.2228 5.85186 2.59373 5.60458L7.2604 2.49346C7.70827 2.19489 8.29173 2.19489 8.7396 2.49346L13.4063 5.60458C13.7772 5.85186 14 6.26817 14 6.71398V12.6671M2 12.6671C2 13.4034 2.59695 14.0004 3.33333 14.0004H12.6667C13.403 14.0004 14 13.4034 14 12.6671M2 12.6671L6.5 9.66706M14 12.6671L9.5 9.66706M2 6.66706L6.5 9.66706M14 6.66706L9.5 9.66706M9.5 9.66706L8.7396 10.174C8.29173 10.4726 7.70827 10.4726 7.2604 10.174L6.5 9.66706" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              Enviar comentario
+            </button>
+
+            <!-- Botones de acción -->
+            <div class="flex mt-6 space-x-6">
+              <button type="button" class="font-semibold btn2 bgOrange">
+                GUARDAR AJUSTES
+              </button>
+              <button type="button" class="font-semibold btn2 bgGreen">PUBLICAR</button>
+              <button type="button" class="btn2 bgWhite">CANCELAR</button>
+            </div>
+          </form>
+        </div>
+        <%- include('partials/modal') %>
+      </div>
+      <!-- fin caja-->
+      
+    </div>
+  </main>
+</div>
+
+<%- include('partials/footer') %>

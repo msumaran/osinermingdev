@@ -1,0 +1,47 @@
+<%- include('partials/header') %>
+
+<main class="flex-grow">
+  <div class="relative content-start w-full h-full bg-login">
+    <div class="absolute inset-x-0 bottom-0 h-16 bg-blue-800 border-t border-opacity-25 border-zinc-100">
+
+      <img src="/images/logo.svg" alt="Logo" class="w-full h-full p-2" />
+    </div>
+
+    <div class="relative max-w-md p-8 mx-auto mt-32 shadow-lg bg-opacity-90 bg-zinc-100 rounded-xl">
+      <div class="absolute inset-x-0 mt-2 ml-8 text-4xl font-bold leading-10 text-left">Registro</div>
+
+
+      <div class="mt-20">
+        <label for="email" class="block text-sm font-normal leading-snug">Nombres y apellidos</label>
+        <input id="email" type="email" class="input" />
+      </div>
+
+
+      <div class="mt-6">
+        <label for="email" class="block text-sm font-normal leading-snug">Proveedor de datos</label>
+        <select id="Proveedor de datos" class="input">
+          <option value="1">Seleccione un proveedor de datos</option>
+        </select>
+      </div>
+
+
+      <div class="mt-6">
+        <label for="email" class="block text-sm font-normal leading-snug">Correo electrónico</label>
+        <input id="email" type="email" class="input" />
+      </div>
+
+      <div class="mt-8">
+        <label for="password" class="block text-sm font-normal leading-snug">Contraseña</label>
+        <input id="password" type="password" class="input" />
+      </div>
+
+      <div class="flex justify-center mt-8">
+        <button id="openModalBtn2" class="button min-w-48">REGISTRARME</button>
+      </div>
+      <%- include('partials/modal4') %>
+   
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

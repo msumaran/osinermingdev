@@ -1,0 +1,149 @@
+<%- include('partials/header') %>
+
+<div class="flex flex-col text-blue">
+  <%- include('partials/menu') %> <%- include('partials/nav') %>
+  <main class="relative mt-20 ml-0 md:mt-16 md:ml-36 lg:ml-72">
+    <div class="min-h-screen p-6">
+      <div class="caja">
+        <h1 class="mb-8 text-2xl font-bold">Preguntas frecuentes</h1>
+        <div class="flex flex-col mb-4">
+          <div class="flex items-start content-start my-4">
+              <button class="buttonsm" onclick="window.location.href='/preguntas_frecuentes2'"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 4.5V9M9 9V13.5M9 9H13.5M9 9L4.5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Nueva pregunta frecuente</button>
+            </div>
+      </div>
+        <div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Posición del Slider</th>
+                <th>Título</th>
+                <th>Texto</th>
+                <th class="text-center">Editar</th>
+                <th class="text-center">Eliminar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">
+                  <div class="flex flex-row justify-center text-lg font-bold">
+                    1
+                  </div>
+                </td>
+                <td>Bienvenido a Rendición de Cuentas</td>
+                <td>Aquí encontrará informes, reportes, documentos y datos ...</td>
+               
+               
+                <td class="text-center">
+                  <button>
+                    <img src="/images/icons/pencil.svg" class="w-5 h-5" />
+                  </button>
+                </td>
+
+                <td class="text-center">
+                    <button>
+                      <img src="/images/icons/trash.svg" class="w-5 h-5" />
+                    </button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="flex flex-row justify-center text-lg font-bold">
+                    2
+                  </div>
+                </td>
+                <td>Memoria Institucional anual</td>
+                <td>Conozca los resultados de gestión institucional, las acciones...</td>
+               
+                <td class="text-center">
+                  <button>
+                    <img src="/images/icons/pencil.svg" class="w-5 h-5" />
+                  </button>
+                </td>
+
+                <td class="text-center">
+                    <button>
+                      <img src="/images/icons/trash.svg" class="w-5 h-5" />
+                    </button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                    <div class="flex flex-row justify-center text-lg font-bold">
+                      3
+                    </div>
+                  </td>
+                <td>Reporte de registros de instaladores de gas natural</td>
+                <td>Lista actualizada de instaladores de gas natural, a fin de que...</td>
+               
+                <td class="text-center">
+                  <button>
+                    <img src="/images/icons/pencil.svg" class="w-5 h-5" />
+                  </button>
+                </td>
+                <td class="text-center">
+                    <button>
+                      <img src="/images/icons/trash.svg" class="w-5 h-5" />
+                    </button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                    <div class="flex flex-row justify-center text-lg font-bold">
+                      4
+                    </div>
+                  </td>
+                <td>Bienvenido a Rendición de Cuentas</td>
+                <td>Aquí encontrará informes, reportes, documentos y datos ...</td>
+           
+                <td class="text-center">
+                  <button>
+                    <img src="/images/icons/pencil.svg" class="w-5 h-5" />
+                  </button>
+                </td>
+                <td class="text-center">
+                    <button>
+                      <img src="/images/icons/trash.svg" class="w-5 h-5" />
+                    </button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                    <div class="flex flex-row justify-center text-lg font-bold">
+                      5 
+                    </div>
+                  </td>
+                <td>Memoria Institucional anual</td>
+                <td>Conozca los resultados de gestión institucional, las acciones...</td>
+             
+                <td class="text-center">
+                  <button>
+                    <img src="/images/icons/pencil.svg" class="w-5 h-5" />
+                  </button>
+                </td>
+                <td class="text-center">
+                    <button>
+                      <img src="/images/icons/trash.svg" class="w-5 h-5" />
+                    </button>
+                  </td>
+              </tr>
+              <!-- More rows would go here, following the same structure -->
+            </tbody>
+          </table>
+        </div>
+        <div class="flex justify-center w-full mt-9">
+          <%- include('partials/paginador') %>
+        </div>
+      </div>
+      <!-- fin caja-->
+    </div>
+  </main>
+</div>
+
+<%- include('partials/footer') %>

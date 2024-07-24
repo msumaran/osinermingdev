@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+
+<div class="flex flex-col text-blue">
+  <%- include('partials/menu') %> <%- include('partials/nav') %>
+  <main class="relative mt-20 ml-0 md:mt-16 md:ml-36 lg:ml-72">
+    <div class="min-h-screen p-6">
+      <div class="caja">
+        <div class="flex flex-col mb-6">
+          <form
+            class="w-full p-8 mx-auto"
+            action="/preguntas_frecuentes"
+            method="get"
+          >
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
+              <!-- Título del documento -->
+              <div class="col-span-4">
+                <label for="titulo" class="label">Título de la pregunta</label>
+                <input
+                  type="text"
+                  id="titulo"
+                  name="titulo"
+                  placeholder="Escriba el nombre del nuevo documento"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F6A229]"
+                />
+              </div>
+
+              <!-- Ámbito -->
+              <div class="col-span-4">
+                <label for="ambito" class="label">Texto</label>
+                <textarea
+                  id="ambito"
+                  name="ambito"
+                  rows="6"
+                  placeholder="Escriba el texto de la pregunta"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F6A229]"
+                >
+Lorem ipsum dolor sit amet consectetur. Arcu eleifend varius blandit commodo placerat pulvinar tristique. Eu leo dignissim viverra dignissim suspendisse ut volutpat ut. Tristique fusce felis in vitae. Cras id amet adipiscing ultricies posuere aenean. Aliquam massa feugiat eget commodo purus adipiscing diam. Orci fringilla integer aliquet turpis eu enim in arcu. Non donec at sagittis viverra elementum malesuada. Amet in consectetur integer viverra ipsum turpis pellentesque. Urna lacus urna ut sit sed massa convallis. Phasellus sit rutrum vitae enim quam faucibus sit amet quis.
+Orci massa auctor vitae amet scelerisque arcu senectus id non. In integer pellentesque at massa et neque ut. At sed imperdiet fames eu sed vulputate scelerisque nullam. Libero nisi egestas diam ut arcu ac erat tellus tincidunt. Sed diam amet nisl sit volutpat dignissim blandit adipiscing tincidunt. In faucibus non mauris est leo ut. Gravida lorem nunc nulla et mattis amet neque. Ligula sagittis pulvinar duis nunc quis. Eu volutpat aliquam at laoreet aenean urna ullamcorper. Lacus pellentesque elementum quisque sed feugiat velit semper pretium massa. Neque lorem sit mauris in nec tristique magna eget sollicitudin. Congue a neque blandit justo donec bibendum etiam. Purus at at vulputate convallis.
+                        </textarea
+                >
+              </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="flex justify-start mt-8 space-x-4">
+              <button type="submit" class="buttonmd">GUARDAR</button>
+              <button type="button" class="button-tertiarymd">CANCELAR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- fin caja-->
+    </div>
+  </main>
+</div>
+
+<%- include('partials/footer') %>

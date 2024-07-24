@@ -1,0 +1,22 @@
+{
+  "name": "osinermingadmin",
+  "version": "1.0.0",
+  "description": "Administrador de Osinerming",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch\" \"node --watch index.js\"",
+    "test": "node --watch index.js"
+  },
+  "author": "Nativos Digitales",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "firebase-functions": "^5.0.1",
+    "flowbite": "^2.4.1",
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "tailwindcss": "^3.4.6"
+  }
+}

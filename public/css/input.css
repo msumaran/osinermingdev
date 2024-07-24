@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300 !important;
+  font-style: normal;
+  color: #4E4E4E;
+   font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-login {
+  background: url("/images/bg_login.png") no-repeat center center;
+  background-size: cover;
+}
+.input{
+  @apply w-full p-2.5 mt-1 bg-white border rounded border-neutral-600/25 text-sm
+}
+.button{
+  @apply px-6 py-3 text-sm font-bold uppercase rounded-[14px] leading-[15px] text-zinc-100 hover:bg-orange-400; 
+  background-color: #F6A229;
+}
+
+.btn{
+  @apply px-4 py-2.5 rounded-[14px] leading-[16px]  text-zinc-100 hover:bg-orange-400 hover:opacity-50; 
+}
+.btn2{
+  @apply px-8 py-3 rounded-[14px] leading-[16px]  text-zinc-100 hover:opacity-50; 
+}
+.bgTransparent{
+  @apply text-[#4e4e4e]/25 border-2 border-[#4e4e4e]/25 hover:bg-gray-300 hover:text-gray-100 py-2.5;
+  background-color: transparent;
+
+}
+.bgWhite{
+  background-color: #FFFFFF;
+  @apply text-[#4e4e4e]/25 border-2 border-[#4e4e4e]/25 hover:bg-gray-300 hover:text-gray-100
+
+}
+.bgOrange{
+  background-color: #F6A229;
+}
+.bgGreen{
+  background-color: #35CC29;
+  @apply hover:opacity-50 hover:bg-green-500
+}
+.bgYellow{
+  background-color: #FBE122;
+  color: #4E4E4E;
+}
+.bgRed{
+  background-color: #FF3636;
+}
+.bgPink{
+  background-color: #F6A22980;
+  color: #4E4E4E;
+}
+.buttonOrange{
+  @apply px-4 py-2 text-sm font-semibold  rounded-lg leading-[12px] border border-[#f08010] hover:opacity-90;
+  color: #F08010;
+}
+.buttonOrange svg{
+  @apply hover:text-orange-400 cursor-pointer hover:fill-orange-100 inline-flex  align-middle
+}
+.buttonxs{
+  @apply px-4 py-2 text-sm font-semibold  rounded-lg leading-[12px] text-zinc-100 hover:bg-orange-400;
+  background-color: #F6A229;
+}
+.buttonxs svg{
+  @apply hover:text-orange-400 cursor-pointer hover:fill-orange-100 inline-flex  align-middle
+}
+.buttonsm{
+  @apply px-4 py-2 text-sm font-semibold  rounded-md leading-[12px] text-zinc-100 hover:bg-orange-400;
+  background-color: #F6A229;
+}
+.buttonmd{
+  @apply px-4 py-3 text-sm font-semibold  rounded-[14px] leading-[12px] text-zinc-100 hover:bg-orange-400;
+  background-color: #F6A229;
+}
+.buttonmd2{
+  @apply px-4 py-2.5 text-sm font-semibold  rounded-lg leading-[12px] text-zinc-100 hover:bg-orange-400;
+  background-color: #F6A229;
+}
+.buttonmd2 svg{ 
+  @apply hover:text-orange-400 cursor-pointer hover:fill-orange-100 inline-flex  align-middle
+}
+.buttonsm svg{ 
+  @apply hover:text-orange-400 cursor-pointer hover:fill-orange-100 inline-flex  align-middle
+}
+
+.button-yellow{
+  @apply px-3.5 py-[7px] rounded-[22px] justify-center items-center gap-2.5 inline-flex;
+  background-color: #FBE122
+  
+}
+.button-secondary{
+  @apply px-6 py-3 text-sm font-bold uppercase  rounded-[12px] leading-[15px] text-zinc-100;
+  background-color: #35CC29;
+}
+.button-tertiary{
+  @apply px-6 py-3 text-sm font-bold uppercase  rounded-[12px] leading-[15px] text-zinc-200 border-2 border-neutral-600/25;
+ 
+}
+.button-tertiaryxs{
+  @apply px-4 py-2 text-xs font-semibold  rounded-lg leading-[12px] text-neutral-600/25  hover:bg-zinc-200 border-2 border-neutral-600/25;
+  
+}
+.button-tertiarysm{
+  @apply px-4 py-2 text-xs font-semibold  rounded-md leading-[12px] text-neutral-600/25  hover:bg-zinc-200 border-2 border-neutral-600/25;
+
+}
+.button-tertiarymd{
+  @apply px-4 py-3 text-xs font-semibold  rounded-[14px] leading-[12px] text-neutral-600/25  hover:bg-zinc-200 border-2 border-neutral-600/25;
+
+}
+.text-blue{
+  color: #0039AA;
+}
+.menu{
+  @apply mt-12 space-y-2 text-sm font-medium md:mt-8
+}
+.menu li a{
+  color: #0039AA;
+  @apply flex items-center p-3 my-4 rounded-2xl bg-zinc-100 hover:bg-[#FBE122] font-semibold
+  
+}
+.caja{
+  @apply w-full bg-white rounded-[14px] p-8;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  color: #4E4E4E;
+}
+.cajaInt {
+  @apply w-full bg-zinc-100/50 rounded-[14px] p-6 my-4;
+}
+.cajaInt2 {
+  @apply w-full p-6 my-4 shadow rounded-3xl ;
+}
+.cajaInt3 {
+  @apply w-full p-6 my-4 rounded-xl border border-[#e7e7e7] ;
+}
+.h3 {
+  @apply text-neutral-600 text-xl font-bold leading-relaxed
+}
+.listNumber {
+
+  @apply text-xs list-decimal mx-4
+}
+.listNumber li{
+  @apply my-1 leading-[21px]
+}
+.listNumber li a {
+  @apply hover:text-blue-800 hover:underline
+}
+.btn svg{
+  @apply hover:text-orange-400 cursor-pointer hover:fill-orange-100
+}
+.notifications{
+  @apply relative rounded-[14px] p-6 bg-zinc-100/50
+}
+.table {
+  @apply min-w-full  rounded-[14px] bg-zinc-100/50;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  
+}
+.table thead tr{
+  @apply text-sm leading-normal text-gray-600 
+}
+.table thead th{
+  @apply px-6 py-4 text-left;
+  font-size: 1rem !important;
+}
+.table tbody{
+  @apply text-sm  text-gray-600
+}
+.table tbody tr {
+  @apply border-t border-gray-200 hover:bg-gray-100 
+}
+.table tbody td{
+  @apply px-6 py-4
+}
+.custom-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23F6A229'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E") !important;
+  background-position: right 0.75rem center !important;
+  background-repeat: no-repeat !important;
+  background-size: 1.35em 1.35em !important; /* Reducido un 10% de 1.5em */
+  padding-right: 2.85rem !important; /* Ajustado proporcionalmente */
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  @apply w-full p-2 pr-8 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-orange-500;
+}
+.label{
+  @apply block font-semibold text-lg text-gray-700 mb-2
+}
+.readOnly{
+  background-color: #F2F2F2 !important;
+  color: #4E4E4E !important;
+}
+.modal{
+  @apply fixed inset-0 z-50 items-center justify-center overflow-x-hidden overflow-y-auto ;
+  background-color: #d9d9d995;
+}

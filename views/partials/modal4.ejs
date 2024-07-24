@@ -1,0 +1,66 @@
+<div id="commentModal2" class="flex hidden modal">
+  <div class="relative w-full max-w-xl max-h-full">
+    <!-- Contenido del modal -->
+    <div class="relative bg-[#D9D9D9] shadow rounded-xl px-8 py-2">
+      <!-- Cabecera del modal -->
+      <button id="closeModalBtn2" type="button" class="absolute top-3 right-3">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.3"
+            d="M12 4C7.59 4 4 7.59 4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4ZM16 14.59L14.59 16L12 13.41L9.41 16L8 14.59L10.59 12L8 9.41L9.41 8L12 10.59L14.59 8L16 9.41L13.41 12L16 14.59Z"
+            fill="#4E4E4E"
+            fill-opacity="0.25"
+          />
+          <path
+            d="M14.59 8L12 10.59L9.41 8L8 9.41L10.59 12L8 14.59L9.41 16L12 13.41L14.59 16L16 14.59L13.41 12L16 9.41L14.59 8ZM12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+            fill="#4E4E4E"
+            fill-opacity="0.25"
+          />
+        </svg>
+      </button>
+      <!-- Cuerpo del modal -->
+      <div class="p-8 space-y-3">
+        <h4 class="pt-4 text-lg font-semibold text-center">GRACIAS POR REGISTRARSE</h4>
+        <p class="py-6 mx-auto text-center">Su registro está en proceso y será aceptado por un supervisor para su acceso a la plataforma.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Obtener elementos del DOM
+  const modal2 = document.getElementById("commentModal2");
+  const openModalBtn2 = document.getElementById("openModalBtn2");
+  const closeModalBtn2 = document.getElementById("closeModalBtn2");
+  const cancelBtn2 = document.getElementById("cancelBtn2");
+
+  // Función para abrir el modal
+  function openModal2() {
+    modal2.classList.remove("hidden");
+    modal2.setAttribute("aria-hidden", "false");
+  }
+
+  // Función para cerrar el modal
+  function closeModal2() {
+    modal2.classList.add("hidden");
+    modal2.setAttribute("aria-hidden", "true");
+  }
+
+  // Event listeners
+  openModalBtn2.addEventListener("click", openModal2);
+  closeModalBtn2.addEventListener("click", closeModal2);
+  cancelBtn2.addEventListener("click", closeModal2);
+
+  // Cerrar el modal si se hace clic fuera de él
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal2();
+    }
+  });
+</script>
